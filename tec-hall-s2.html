@@ -81,11 +81,13 @@ blockquote.destaque { border: 2px solid var(--ink-soft); padding: 24px 28px; mar
 .footer-id { font-family: var(--mono); font-size: 10px; color: var(--ink-soft); text-align: right; line-height: 2.2; flex-shrink: 0; margin-left: 48px; }
 
 
-@media (max-width: 700px) {
-  body { padding: 0 24px 80px; }
+@media (max-width: 560px) {
+  body { padding: 0 20px 80px; }
   .g2, .g3 { grid-template-columns: 1fr; }
   .temas { grid-template-columns: 1fr; }
-  .tema:nth-child(even) { padding-left: 0; border-left: none; }
+  .tema { padding: 24px 18px; }
+  .tema:nth-child(odd) { padding-left: 18px; }
+  .tema:nth-child(even) { padding-left: 18px; border-left: none; }
   .footer-wrap { flex-direction: column; gap: 32px; }
   .footer-id { text-align: left; }
   .ag-linha { grid-template-columns: 1fr; gap: 4px; }
@@ -93,6 +95,9 @@ blockquote.destaque { border: 2px solid var(--ink-soft); padding: 24px 28px; mar
   .ag-desc { font-size: 14px; }
   .ag-dia { padding: 28px 20px; }
   .local-grid { grid-template-columns: 1fr !important; }
+  .hero-text-accent { max-width: 100%; padding-left: 18px; }
+  .hero .corpo-grande { max-width: 100%; }
+  .t1b { font-size: clamp(34px, 11vw, 52px); }
 }
 </style>
 </head>
